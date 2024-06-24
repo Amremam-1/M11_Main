@@ -79,7 +79,7 @@ const Header = () => {
         <div className={styles.logo}>
           <img
             className={styles.logoImg}
-            src="/public/images/logo.png"
+            src="/images/logo.png"
             alt="logo"
             width={100}
             height={55}
