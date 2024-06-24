@@ -1,0 +1,45 @@
+import { Link } from "react-router-dom"
+import styles from "./styles.module.scss"
+import { Button } from "react-bootstrap"
+
+const News = () => {
+  return (
+    <section>
+      <div className={`${styles.m11} secContainer`}>
+        <img
+          src={"/src/assets/images/M11-01-01.png"}
+          className={styles.m11_img}
+          alt=""
+          width={0}
+          height={0}
+          sizes="100vw"
+        />
+      </div>
+
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <h3>النشرة الإخبارية</h3>
+          <p>
+            اشترك في النشرة الإخبارية الخاصة بـ M11 للحصول على آخر التحديثات
+          </p>
+
+          <form>
+            <input
+              className={styles.email}
+              type="email"
+              placeholder="البريد الالكتروني"
+              id="email"
+              name="email"
+            />
+
+            <Button type="submit" className={styles.btn}>
+              <Link href={""}>اشترك الان</Link>
+            </Button>
+          </form>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default News

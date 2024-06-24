@@ -1,0 +1,192 @@
+@import "../../../style/base.scss";
+
+.header {
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .nav {
+      margin-inline-start: 26px;
+      .navList {
+        display: flex;
+        align-items: center;
+        border-right: 2px solid rgba(253, 227, 167, 1);
+        padding-right: 42px;
+        height: 50px;
+        gap: 32px;
+        @media (max-width: $xl-media) {
+          gap: 16px;
+        }
+        @media (max-width: $lgpro-media) {
+          display: none;
+        }
+        .navItem {
+          text-transform: uppercase;
+          .navLink {
+            font-size: 18px;
+            // font-weight: 400;
+            line-height: 19.8px;
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            color: rgba(255, 245, 221, 0.5);
+            // @include transition(0.3s);
+
+            .arrow {
+              font-size: 18px;
+              color: #fff;
+              top: 2px;
+              position: relative;
+            }
+            &:hover {
+              color: #fff;
+            }
+            &.active {
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+      }
+    }
+
+    .apps {
+      position: relative;
+
+      .appsBtn {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+
+        .shapes {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2.8px;
+
+          .square {
+            width: 8.58px;
+            height: 8.58px;
+            border-radius: 100px;
+            background: #f29a35;
+          }
+          .circle {
+            width: 8.58px;
+            height: 8.58px;
+            border-radius: 2px;
+            background: rgba(207, 207, 207);
+          }
+        }
+      }
+
+      .wrapperApps {
+        position: absolute;
+        top: 180%;
+        transform: translateX(80%);
+        right: -10px;
+        background: rgba(51, 51, 51, 1);
+        width: 270px;
+        height: 330px;
+        padding: 5px;
+        border-radius: 10px;
+
+        .main {
+          width: 100%;
+          height: 100%;
+          background: rgba(13, 13, 13, 1);
+          border-radius: 10px;
+          padding: 16px 9px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .app {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            align-items: start;
+            position: relative;
+
+            &:not(:last-child)::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              border-bottom: 0.5px solid rgba(51, 51, 51, 1);
+              margin-bottom: 5px;
+              // padding-top: 10px;
+            }
+
+            .appContent {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+
+              .head {
+                font-size: 15px;
+                font-weight: 800;
+                color: rgba(130, 126, 116, 1);
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                .subtitle {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 8px;
+                  color: rgba(130, 126, 116, 1);
+                  margin-top: 10px;
+                }
+              }
+
+              .btn {
+                margin-right: auto;
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+                cursor: pointer !important;
+
+                .link {
+                  font-weight: 700;
+                  font-size: 15px;
+                  color: rgba(242, 242, 243, 1);
+                  margin-left: 4px;
+                }
+
+                .icon {
+                  font-size: 17px;
+                  margin-top: 10px;
+                  position: relative;
+                  color: rgba(241, 141, 29, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // .menu {
+      //   display: none;
+
+      //   @media (max-width: $lgpro-media) {
+      //     display: block;
+      //   }
+
+      //   .iconMenu {
+      //     font-size: 33px;
+      //     color: #fff;
+      //     cursor: pointer;
+      //   }
+      // }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@import "../../../style/base.scss";
+
+.container {
+  // border: 1px solid red;
+  margin: auto;
+  max-width: 1400px;
+  padding-right: 30px;
+  @media (max-width: 970px) {
+    padding-right: 0;
+    padding: 0 20px;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .info {
+      // border: 1px solid red;
+      position: relative;
+      width: 50%;
+      @media (max-width: 970px) {
+        width: 100%;
+      }
+      .title {
+        font-size: 177px;
+        font-weight: 400;
+        line-height: 194.7px;
+        color: rgba(255, 255, 255);
+        opacity: 10%;
+        @media (max-width: 503px) {
+          font-size: 150px;
+        }
+
+        @media (max-width: 435px) {
+          font-size: 110px;
+          line-height: 94.7px;
+        }
+        @media (max-width: 329px) {
+          font-size: 90px;
+          line-height: 40.7px;
+        }
+      }
+
+      .disc {
+        font-size: 18px;
+        line-height: 33px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 50px;
+        @media (max-width: 435px) {
+          font-size: 17px;
+        }
+        span {
+          color: rgba(241, 141, 29, 1);
+        }
+      }
+    }
+
+    .shape {
+      img {
+        width: 530px;
+        height: 530px;
+        @media (max-width: 1097px) {
+          width: 466px;
+        }
+        @media (max-width: 970px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .discover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // border: 1px solid red;
+    padding-bottom: 29px;
+    padding-left: 14px;
+    border-bottom: 1px solid rgba(28, 28, 33, 1);
+    margin-top: -78px;
+
+    @media (max-width: 970px) {
+      margin-top: 30px;
+      padding-left: 0;
+    }
+
+    .title {
+      color: #fff;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 48px;
+      @media (max-width: 570px) {
+        font-size: 29px;
+      }
+      @media (max-width: 435px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      @media (max-width: 329px) {
+        font-size: 18px;
+      }
+    }
+
+    .view {
+      padding: 13px 20px;
+      border-radius: 10px;
+      background: rgba(28, 28, 33, 1);
+      border: 1px solid;
+
+      border-image-source: linear-gradient(
+        135.66deg,
+        #2f2f37 28.87%,
+        rgba(47, 47, 55, 0) 76.42%
+      );
+      @media (max-width: 570px) {
+        padding: 11px 18px;
+      }
+      @media (max-width: 425px) {
+        padding: 11px;
+      }
+      a {
+        color: #fff;
+        font-size: 15px;
+
+        @media (max-width: 425px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

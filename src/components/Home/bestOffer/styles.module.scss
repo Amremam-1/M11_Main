@@ -1,0 +1,186 @@
+@import "../../../style/base.scss";
+.heading {
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 165px;
+  color: #fff;
+  opacity: 10%;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 100px;
+  }
+  @media (max-width: 520px) {
+    font-size: 80px;
+  }
+  @media (max-width: 425px) {
+    font-size: 65px;
+  }
+}
+.container {
+  margin: auto;
+
+  .main_wrapper {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .Graphic,
+    .poster {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      padding-bottom: 80px;
+      padding-top: 80px;
+      border-bottom: 1px solid rgba(28, 28, 33, 1);
+
+      @media (max-width: 768px) {
+        padding-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+      }
+      .advertising {
+        width: 40%;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .title {
+          font-weight: 400;
+          font-size: 33px;
+          line-height: 49.5px;
+          color: rgba(202, 202, 206, 1);
+        }
+        .amount {
+          display: flex;
+          align-items: center;
+
+          @media (max-width: 1099px) {
+            flex-direction: column;
+            align-items: start;
+          }
+
+          @media (max-width: 768px) {
+            flex-direction: row;
+          }
+          p {
+            font-family: $manrope-font !important;
+            font-weight: 500;
+            font-size: 80px;
+            line-height: 120px;
+            color: rgba(202, 202, 206, 1);
+
+            @media (max-width: 520px) {
+              font-size: 55px;
+            }
+            @media (max-width: 375px) {
+              font-size: 44px;
+            }
+            span {
+              font-weight: 400;
+              font-size: 80px;
+              line-height: 120px;
+
+              @media (max-width: 520px) {
+                font-size: 55px;
+              }
+
+              @media (max-width: 375px) {
+                font-size: 44px;
+              }
+            }
+          }
+        }
+
+        .btn {
+          margin-right: 50px;
+          width: 85px;
+          height: 36px;
+          border-bottom: 1px solid rgba(47, 47, 55, 1);
+          padding: 6px 0px;
+
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 19px;
+          color: rgba(242, 242, 243, 1);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 3px;
+
+          position: relative;
+          z-index: 1;
+
+          @media (max-width: 1099px) {
+            margin-right: 0;
+            margin-top: 20px;
+          }
+          @media (max-width: 768px) {
+            margin-right: 50px;
+            margin-top: 22px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #c0bfbf79;
+            bottom: 0;
+            right: 0;
+            border-radius: 3px;
+            transition: 0.3s;
+            height: 0;
+            z-index: -1;
+          }
+          &:hover::before {
+            height: 100%;
+          }
+          .arrow {
+            position: relative;
+            top: 5px;
+            font-size: 26px;
+            color: #fff;
+          }
+        }
+      }
+
+      .offers_details {
+        width: 50%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .services_highlight {
+          display: flex;
+          flex-direction: column;
+
+          li {
+            width: 100%;
+            height: 62px;
+            padding: 16px 18px 16px 18px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(28, 28, 33, 1);
+            border-radius: 10px;
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(175, 176, 182, 1);
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+
+            @media (max-width: 992px) {
+              font-size: 16px;
+            }
+            @media (max-width: 375px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
