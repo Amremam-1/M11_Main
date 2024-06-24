@@ -49,7 +49,7 @@ const apps = [
     title: "الدليــل التجــاري",
     subtitle: "منشأت , مندوبين , منتجات بيع وايجار واكثر ",
     imageUrl: "/images/D2020.png",
-    link: "",
+    link: "https://d2020web.vercel.app/",
     icon: FiArrowUpLeft,
   },
   {
