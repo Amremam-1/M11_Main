@@ -1,7 +1,6 @@
 import styles from "./styles.module.scss"
 import { useState } from "react"
 import { FiArrowDownLeft } from "react-icons/fi"
-// import { LuMenu } from "react-icons/lu"
 import { Link } from "react-router-dom"
 import { FiArrowUpLeft } from "react-icons/fi"
 
