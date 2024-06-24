@@ -3,7 +3,6 @@ import { FaXTwitter } from "react-icons/fa6"
 import { FaFacebookF } from "react-icons/fa"
 import { FaYoutube } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
-import { Button } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 
@@ -41,7 +40,7 @@ const PageHead = () => {
         <div className={styles.pageLinks}>
           <div className={styles.right}>
             <div className={styles.whatsAppContainer}>
-              <Button
+              <button
                 className={styles.whatsApp}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -71,7 +70,7 @@ const PageHead = () => {
                     </div>
                   </div>
                 )}
-              </Button>
+              </button>
             </div>
           </div>
           <div className={styles.left}>
