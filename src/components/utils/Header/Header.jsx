@@ -41,21 +41,21 @@ const apps = [
   {
     title: "مجموعة ماهر بن نايف التجارية",
     subtitle: "للخدمات التقنية والفنية والتسويقية",
-    imageUrl: "/src/assets/images/mbn-logo.png",
+    imageUrl: "/public/images/mbn-logo.png",
     link: "https://mahercp2-main.vercel.app/en",
     icon: FiArrowUpLeft,
   },
   {
     title: "الدليــل التجــاري",
     subtitle: "منشأت , مندوبين , منتجات بيع وايجار واكثر ",
-    imageUrl: "/src/assets/images/D2020.png",
+    imageUrl: "/public/images/D2020.png",
     link: "",
     icon: FiArrowUpLeft,
   },
   {
     title: "متجر HALF/ نـص",
     subtitle: "للتجارة الالكترونية",
-    imageUrl: "/src/assets/images/halfapp.png",
+    imageUrl: "/public/images/halfapp.png",
     link: "https://noo9.net/",
     icon: FiArrowUpLeft,
   },
@@ -79,7 +79,7 @@ const Header = () => {
         <div className={styles.logo}>
           <img
             className={styles.logoImg}
-            src="/src/assets/images/logo.png"
+            src="/public/images/logo.png"
             alt="logo"
             width={100}
             height={55}

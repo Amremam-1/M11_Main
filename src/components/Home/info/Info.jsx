@@ -21,7 +21,7 @@ const Info = () => {
 
           <div className={styles.shape}>
             <img
-              src={"/src/assets/images/shape.png"}
+              src={"/public/images/shape.png"}
               alt=""
               className={styles.img}
               width={0}

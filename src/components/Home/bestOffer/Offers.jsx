@@ -28,7 +28,7 @@ const Offers = () => {
               <ul className={styles.services_highlight}>
                 <li>
                   <img
-                    src={"/src/assets/images/highlight.png"}
+                    src={"/public/images/highlight.png"}
                     alt=""
                     width={25}
                     height={25}
@@ -38,7 +38,7 @@ const Offers = () => {
                 </li>
                 <li>
                   <img
-                    src={"/src/assets/images/highlight.png"}
+                    src={"/public/images/highlight.png"}
                     alt=""
                     width={25}
                     height={25}
@@ -48,7 +48,7 @@ const Offers = () => {
                 </li>
                 <li>
                   <img
-                    src={"/src/assets/images/highlight.png"}
+                    src={"/public/images/highlight.png"}
                     alt=""
                     width={25}
                     height={25}

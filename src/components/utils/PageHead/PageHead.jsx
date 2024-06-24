@@ -47,7 +47,7 @@ const PageHead = () => {
               >
                 <Link href={""}>
                   <img
-                    src={"/src/assets/images/whatsApp.png"}
+                    src={"/public/images/whatsApp.png"}
                     className={styles.whatup}
                     alt=""
                     width={0}

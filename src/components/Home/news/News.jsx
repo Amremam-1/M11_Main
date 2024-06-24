@@ -6,7 +6,7 @@ const News = () => {
     <section>
       <div className={`${styles.m11} secContainer`}>
         <img
-          src={"/src/assets/images/M11-01-01.png"}
+          src={"/public/images/M11-01-01.png"}
           className={styles.m11_img}
           alt=""
           width={0}

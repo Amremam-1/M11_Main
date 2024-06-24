@@ -42,7 +42,7 @@ const Services = () => {
                 <ul className={styles.services_highlight}>
                   <li>
                     <img
-                      src={"/src/assets/images/highlight.png"}
+                      src={"/public/images/highlight.png"}
                       alt=""
                       width={30}
                       height={30}
@@ -52,7 +52,7 @@ const Services = () => {
                   </li>
                   <li>
                     <img
-                      src={"/src/assets/images/highlight.png"}
+                      src={"/public/images/highlight.png"}
                       alt=""
                       width={30}
                       height={30}
@@ -62,7 +62,7 @@ const Services = () => {
                   </li>
                   <li>
                     <img
-                      src={"/src/assets/images/highlight.png"}
+                      src={"/public/images/highlight.png"}
                       alt=""
                       width={30}
                       height={30}
@@ -72,7 +72,7 @@ const Services = () => {
                   </li>
                   <li>
                     <img
-                      src={"/src/assets/images/highlight.png"}
+                      src={"/public/images/highlight.png"}
                       alt=""
                       width={30}
                       height={30}
@@ -86,7 +86,7 @@ const Services = () => {
           </div>
           <div className={styles.technical_image}>
             <img
-              src={"/src/assets/images/camare.png"}
+              src={"/public/images/camare.png"}
               alt=""
               className={styles.camare}
               width={0}
@@ -95,7 +95,7 @@ const Services = () => {
             />
 
             <img
-              src={"/src/assets/images/camarebg.png"}
+              src={"/public/images/camarebg.png"}
               alt=""
               className={styles.camare_bg}
               width={0}
