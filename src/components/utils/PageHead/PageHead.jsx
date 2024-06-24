@@ -32,9 +32,9 @@ const PageHead = () => {
             احدث الامكانيات
           </p>
 
-          <Button className={styles.btn}>
+          <button className={styles.btn}>
             <Link href={""}>ابدا الان</Link>
-          </Button>
+          </button>
         </div>
 
         <div className={styles.pageLinks}>

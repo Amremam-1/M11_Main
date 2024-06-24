@@ -1,7 +1,6 @@
 import styles from "./styles.module.scss"
 import { IoIosMailOpen } from "react-icons/io"
 import { FiPhone } from "react-icons/fi"
-import { Button } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 const Contact = () => {
@@ -57,9 +56,9 @@ const Contact = () => {
                 name="message"
               />
 
-              <Button type="submit" className={styles.btn}>
+              <button type="submit" className={styles.btn}>
                 <Link href={""}>ارسل رسالتك</Link>
-              </Button>
+              </button>
             </form>
           </div>
         </div>
