@@ -1,8 +1,7 @@
 import styles from "./styles.module.scss"
 import { useState } from "react"
-import { FiArrowDownLeft } from "react-icons/fi"
+import { FiArrowDownLeft, FiArrowUpLeft } from "react-icons/fi"
 import { Link } from "react-router-dom"
-import { FiArrowUpLeft } from "react-icons/fi"
 
 const navList = [
   {
