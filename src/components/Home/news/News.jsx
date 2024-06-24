@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import styles from "./styles.module.scss"
-import { Button } from "react-bootstrap"
 
 const News = () => {
   return (
@@ -32,9 +31,9 @@ const News = () => {
               name="email"
             />
 
-            <Button type="submit" className={styles.btn}>
+            <button type="submit" className={styles.btn}>
               <Link href={""}>اشترك الان</Link>
-            </Button>
+            </button>
           </form>
         </div>
       </div>
