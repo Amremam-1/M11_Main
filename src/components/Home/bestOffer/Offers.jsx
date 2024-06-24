@@ -13,8 +13,7 @@ const Offers = () => {
 
               <div className={styles.amount}>
                 <p>
-                  450{" "}
-                  <span>ريال</span>
+                  450 <span>ريال</span>
                 </p>
 
                 <button className={styles.btn}>
@@ -28,7 +27,7 @@ const Offers = () => {
               <ul className={styles.services_highlight}>
                 <li>
                   <img
-                    src={"/public/images/highlight.png"}
+                    src={"/images/highlight.png"}
                     alt=""
                     width={25}
                     height={25}
@@ -38,7 +37,7 @@ const Offers = () => {
                 </li>
                 <li>
                   <img
-                    src={"/public/images/highlight.png"}
+                    src={"/images/highlight.png"}
                     alt=""
                     width={25}
                     height={25}
@@ -48,7 +47,7 @@ const Offers = () => {
                 </li>
                 <li>
                   <img
-                    src={"/public/images/highlight.png"}
+                    src={"/images/highlight.png"}
                     alt=""
                     width={25}
                     height={25}
@@ -65,7 +64,7 @@ const Offers = () => {
               <ul className={styles.services_highlight}>
                 <li>
                   <img
-                    src={"/src/assets/images/highlight.png"}
+                    src={"/images/highlight.png"}
                     alt=""
                     width={25}
                     height={25}
@@ -75,7 +74,7 @@ const Offers = () => {
                 </li>
                 <li>
                   <img
-                    src={"/src/assets/images/highlight.png"}
+                    src={"/images/highlight.png"}
                     alt=""
                     width={25}
                     height={25}
@@ -85,7 +84,7 @@ const Offers = () => {
                 </li>
                 <li>
                   <img
-                    src={"/src/assets/images/highlight.png"}
+                    src={"/images/highlight.png"}
                     alt=""
                     width={25}
                     height={25}

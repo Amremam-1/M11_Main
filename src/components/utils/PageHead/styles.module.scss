@@ -2,7 +2,7 @@
 .pageHead {
   margin-top: -80px;
   background: linear-gradient(-10deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
-    url("/public/images/intro.png");
+    url("/images/intro.png");
   // background-position: 28% 28%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@
                 border-width: 10px;
                 border-style: solid;
                 border-color: #0d0d0d transparent transparent transparent;
-              
+
                 @media (max-width: 425px) {
                   right: 5%;
                 }

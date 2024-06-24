@@ -10,7 +10,7 @@ const Works = () => {
           <div className={styles.portfolio_one}>
             <div className={styles.portfolio_image}>
               <img
-                src={"/public/images/works1.png"}
+                src={"/images/works1.png"}
                 className={styles.img}
                 alt=""
                 width={0}
@@ -127,7 +127,7 @@ const Works = () => {
 
             <div className={styles.portfolio_image}>
               <img
-                src={"/public/images/works2.png"}
+                src={"/images/works2.png"}
                 className={styles.img}
                 alt=""
                 width={0}
@@ -140,7 +140,7 @@ const Works = () => {
           <div className={styles.portfolio_three}>
             <div className={styles.portfolio_image}>
               <img
-                src={"/public/images/work3.png"}
+                src={"/images/work3.png"}
                 className={styles.img}
                 alt=""
                 width={0}

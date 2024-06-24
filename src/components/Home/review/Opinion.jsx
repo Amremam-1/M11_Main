@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa6"
 const comments = [
   {
     id: "01",
-    image: "/public/images/person1.png",
+    image: "/images/person1.png",
     name: "@AsMa-ti1np",
     title: "Saudi Arabia",
     start: FaStar,
@@ -14,7 +14,7 @@ const comments = [
   },
   {
     id: "02",
-    image: "/public/images/person2.png",
+    image: "/images/person2.png",
     name: "@AsMa-ti1np",
     title: "Saudi Arabia",
     start: FaStar,
@@ -90,7 +90,7 @@ const Opinion = () => {
         <div className={styles.m11}>
           <img
             className={styles.img}
-            src={"/public/images/M11-01-01.png"}
+            src={"/images/M11-01-01.png"}
             alt=""
             width={0}
             height={0}

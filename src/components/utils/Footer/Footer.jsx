@@ -84,7 +84,7 @@ const Footer = () => {
           {links.map((item, index) => (
             <li className={styles.servcies} key={index}>
               <img
-                src={"/public/images/highlight.png"}
+                src={"/images/highlight.png"}
                 alt=""
                 width={20}
                 height={21}
@@ -101,7 +101,7 @@ const Footer = () => {
         <div className={styles.m11Right}>
           <img
             className={styles.img}
-            src={"/public/images/M11rotate.png"}
+            src={"/images/M11rotate.png"}
             alt=""
             width={0}
             height={0}
@@ -111,7 +111,7 @@ const Footer = () => {
         <div className={styles.m11Left}>
           <img
             className={styles.img}
-            src={"/public/images/M11rotateleft.png"}
+            src={"/images/M11rotateleft.png"}
             alt=""
             width={0}
             height={0}
@@ -122,7 +122,7 @@ const Footer = () => {
           <div className={styles.logo}>
             <img
               className={styles.image}
-              src={"/public/images/Layer 3.png"}
+              src={"/images/Layer 3.png"}
               alt=""
               width={0}
               height={0}
