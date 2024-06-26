@@ -98,7 +98,7 @@ const Header = () => {
                     className={`${styles.navLink} ${
                       activeLink === item.link ? styles.active : ""
                     }`}
-                    href={item.link}
+                    to={item.link}
                     onClick={() => toggle(item.link)}
                   >
                     {item.titleAr}
