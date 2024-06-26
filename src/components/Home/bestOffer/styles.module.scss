@@ -25,6 +25,10 @@
     display: flex;
     flex-direction: column;
 
+    background-image: url("/public/images/quintus_bg.png");
+    // background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 73%;
     .Graphic,
     .poster {
       display: flex;
