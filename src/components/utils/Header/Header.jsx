@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { FiArrowDownLeft, FiArrowUpLeft } from "react-icons/fi"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const navList = [
   {
@@ -14,26 +14,26 @@ const navList = [
     id: "02",
     titleAr: "خدماتنا",
     titleEn: "",
-    link: "services",
+    link: "/services",
   },
   {
     id: "03",
     titleAr: "أعمالنا",
     titleEn: "",
-    link: "works",
+    link: "/works",
     arrow: FiArrowDownLeft,
   },
   {
     id: "04",
     titleAr: "من نحن",
     titleEn: "",
-    link: "about",
+    link: "/about",
   },
   {
     id: "05",
     titleAr: "تواصل معنا",
     titleEn: "",
-    link: "contact",
+    link: "/contact",
   },
 ]
 
@@ -62,11 +62,16 @@ const apps = [
 ]
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState("01")
+  const location = useLocation()
+  const [activeLink, setActiveLink] = useState(location.pathname)
   const [visibleApps, setVisibleApps] = useState(false)
 
-  const toggle = (id) => {
-    setActiveLink(activeLink === id ? "" : id)
+  useEffect(() => {
+    setActiveLink(location.pathname)
+  }, [location.pathname])
+
+  const toggle = (link) => {
+    setActiveLink(activeLink === link ? "" : link)
   }
 
   const handleClick = () => {
@@ -91,10 +96,10 @@ const Header = () => {
                 <li className={styles.navItem} key={index}>
                   <Link
                     className={`${styles.navLink} ${
-                      activeLink === item.id ? styles.active : ""
+                      activeLink === item.link ? styles.active : ""
                     }`}
                     to={item.link}
-                    onClick={() => toggle(item.id)}
+                    onClick={() => toggle(item.link)}
                   >
                     {item.titleAr}
                     {item.arrow && <item.arrow className={styles.arrow} />}
@@ -151,7 +156,3 @@ const Header = () => {
 }
 
 export default Header
-
-// <div className={styles.menu}>
-// <LuMenu className={styles.iconMenu} />
-// </div>
