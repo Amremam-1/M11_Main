@@ -124,6 +124,9 @@
         color: #fff;
         font-size: 15px;
 
+        position: relative;
+        top: -3px;
+
         @media (max-width: 425px) {
           font-size: 14px;
         }

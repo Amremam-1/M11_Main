@@ -14,26 +14,26 @@ const navList = [
     id: "02",
     titleAr: "خدماتنا",
     titleEn: "",
-    link: "/",
+    link: "services",
   },
   {
     id: "03",
     titleAr: "أعمالنا",
     titleEn: "",
-    link: "/",
+    link: "works",
     arrow: FiArrowDownLeft,
   },
   {
     id: "04",
     titleAr: "من نحن",
     titleEn: "",
-    link: "/",
+    link: "about",
   },
   {
     id: "05",
     titleAr: "تواصل معنا",
     titleEn: "",
-    link: "/",
+    link: "contact",
   },
 ]
 
@@ -93,7 +93,7 @@ const Header = () => {
                     className={`${styles.navLink} ${
                       activeLink === item.id ? styles.active : ""
                     }`}
-                    href={item.link}
+                    to={item.link}
                     onClick={() => toggle(item.id)}
                   >
                     {item.titleAr}
@@ -106,7 +106,10 @@ const Header = () => {
         </div>
 
         <div className={styles.apps}>
-          <div className={styles.appsBtn} onClick={handleClick}>
+          <div
+            className={`${styles.appsBtn} ${visibleApps ? styles.active : ""}`}
+            onClick={handleClick}
+          >
             <div className={styles.shapes}>
               <span className={styles.circle}></span>
               <span className={styles.square}></span>

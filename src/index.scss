@@ -106,24 +106,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.secTitle {
-  .title {
-    position: relative;
-    width: fit-content;
-    z-index: 3;
-    padding: 8px 0px;
-    font-size: 35px;
-    font-weight: 700;
-    &::before {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 20px;
-      height: 100%;
-      z-index: -1;
-      background: $primary;
-    }
+.container {
+  padding: 60px 30px 26px;
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  @media (max-width: $sm-media) {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 

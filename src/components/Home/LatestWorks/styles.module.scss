@@ -118,6 +118,8 @@
               font-size: 18px;
               font-weight: 500;
               text-decoration: underline !important;
+              position: relative;
+              top: -3px;
 
               @media (max-width: 425px) {
                 font-size: 16px;
@@ -272,6 +274,9 @@
               font-size: 18px;
               font-weight: 500;
               text-decoration: underline !important;
+              position: relative;
+              top: -3px;
+
               @media (max-width: 425px) {
                 font-size: 16px;
               }
@@ -422,6 +427,9 @@
               color: #fff;
               font-size: 18px;
               font-weight: 500;
+              position: relative;
+              top: -3px;
+
               text-decoration: underline !important;
               @media (max-width: 425px) {
                 font-size: 16px;
