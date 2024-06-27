@@ -6,6 +6,7 @@ import { FaFacebookF } from "react-icons/fa"
 import { IoLogoInstagram } from "react-icons/io5"
 import { FaYoutube } from "react-icons/fa"
 import { Link } from "react-router-dom"
+import { goToSection } from "../../utils"
 
 const social = [
   { id: "1", icon: FaXTwitter, link: "" },
@@ -15,9 +16,6 @@ const social = [
 ]
 
 const Intro = () => {
-  const goToSection = () => {
-    document.getElementById("to-works").scrollIntoView({ behavior: "smooth" })
-  }
   return (
     <section className="container">
       <div className={styles.wrapper_main}>
@@ -38,7 +36,7 @@ const Intro = () => {
           </ul>
         </div>
 
-        <button className={styles.goDown} onClick={goToSection}>
+        <button className={styles.goDown} onClick={() => goToSection("works")}>
           <span className={styles.text}>قم بالتمرير لأسفل لرؤية الأعمال</span>
           <LiaAngleDoubleDownSolid className={styles.icon} />
         </button>

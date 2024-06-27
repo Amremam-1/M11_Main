@@ -8,7 +8,7 @@ import "react-multi-carousel/lib/styles.css"
 
 const VideoContent = () => {
   return (
-    <section className={"container"}>
+    <section className={"container"} id="works">
       <div className={styles.wrapper_main}>
         <div className={styles.header}>
           <h1 className={styles.highlight}>الفيديو الاعلاني</h1>

@@ -1,10 +1,7 @@
 import styles from "./styles.module.scss"
 import { LiaAngleDoubleDownSolid } from "react-icons/lia"
-
+import { goToSection } from "../../utils"
 const Intro = () => {
-  const goToSection = () => {
-    document.getElementById("to-works").scrollIntoView({ behavior: "smooth" })
-  }
   return (
     <section className="container">
       <div className={styles.wrapper_main}>
@@ -34,7 +31,10 @@ const Intro = () => {
             className={styles.m11_image}
           />
 
-          <button className={styles.goDown} onClick={goToSection}>
+          <button
+            className={styles.goDown}
+            onClick={() => goToSection("services")}
+          >
             <span className={styles.text}>قم بالتمرير لأسفل لرؤية الأعمال</span>
             <LiaAngleDoubleDownSolid className={styles.icon} />
           </button>
