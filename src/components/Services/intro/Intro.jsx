@@ -2,6 +2,9 @@ import styles from "./styles.module.scss"
 import { LiaAngleDoubleDownSolid } from "react-icons/lia"
 
 const Intro = () => {
+  const goToSection = () => {
+    document.getElementById("to-works").scrollIntoView({ behavior: "smooth" })
+  }
   return (
     <section className="container">
       <div className={styles.wrapper_main}>
@@ -31,10 +34,10 @@ const Intro = () => {
             className={styles.m11_image}
           />
 
-          <div className={styles.goDown}>
+          <button className={styles.goDown} onClick={goToSection}>
             <span className={styles.text}>قم بالتمرير لأسفل لرؤية الأعمال</span>
             <LiaAngleDoubleDownSolid className={styles.icon} />
-          </div>
+          </button>
         </div>
       </div>
     </section>
