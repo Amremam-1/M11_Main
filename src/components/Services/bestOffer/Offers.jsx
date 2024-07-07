@@ -114,7 +114,7 @@ const Offers = () => {
 
         <div className={styles.service_video}>
           <div className={styles.video_img}>
-            <img src="/public/images/partyimg.png" alt="party" />
+            <img src="/images/partyimg.png" alt="party" />
           </div>
           <div className={styles.video_content}>
             <h1 className={styles.head}>تصوير الحفلات والمؤتمرات</h1>
