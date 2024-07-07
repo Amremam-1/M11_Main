@@ -1,70 +1,16 @@
 import styles from "./styles.module.scss"
 import { useState, useEffect } from "react"
-import { FiArrowDownLeft, FiArrowUpLeft } from "react-icons/fi"
 import { Link, useLocation } from "react-router-dom"
-
-const navList = [
-  {
-    id: "01",
-    titleAr: "الرئيسية",
-    titleEn: "",
-    link: "/",
-  },
-  {
-    id: "02",
-    titleAr: "خدماتنا",
-    titleEn: "",
-    link: "/services",
-  },
-  {
-    id: "03",
-    titleAr: "أعمالنا",
-    titleEn: "",
-    link: "/works",
-    arrow: FiArrowDownLeft,
-  },
-  {
-    id: "04",
-    titleAr: "من نحن",
-    titleEn: "",
-    link: "/about",
-  },
-  {
-    id: "05",
-    titleAr: "تواصل معنا",
-    titleEn: "",
-    link: "/contact",
-  },
-]
-
-const apps = [
-  {
-    title: "مجموعة ماهر بن نايف التجارية",
-    subtitle: "للخدمات التقنية والفنية والتسويقية",
-    imageUrl: "/images/mbn-logo.png",
-    link: "https://mahercp2-main.vercel.app/en",
-    icon: FiArrowUpLeft,
-  },
-  {
-    title: "الدليــل التجــاري",
-    subtitle: "منشأت , مندوبين , منتجات بيع وايجار واكثر ",
-    imageUrl: "/images/D2020.png",
-    link: "https://d2020web.vercel.app/",
-    icon: FiArrowUpLeft,
-  },
-  {
-    title: "متجر HALF/ نـص",
-    subtitle: "للتجارة الالكترونية",
-    imageUrl: "/images/halfapp.png",
-    link: "https://noo9.net/",
-    icon: FiArrowUpLeft,
-  },
-]
+import VisibleApp from "../App/VisibleApp"
+import { navList } from "../../data"
+import SideBar from "../SideBar/SideBar"
 
 const Header = () => {
   const location = useLocation()
   const [activeLink, setActiveLink] = useState(location.pathname)
   const [visibleApps, setVisibleApps] = useState(false)
+
+  const [showMenu, setShowMenu] = useState(false)
 
   useEffect(() => {
     setActiveLink(location.pathname)
@@ -76,6 +22,10 @@ const Header = () => {
 
   const handleClick = () => {
     setVisibleApps(!visibleApps)
+  }
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu)
   }
 
   return (
@@ -123,32 +73,18 @@ const Header = () => {
             </div>
           </div>
 
-          {visibleApps && (
-            <div className={styles.wrapperApps}>
-              <div className={styles.main}>
-                {apps.map((item, index) => (
-                  <div className={styles.app} key={index}>
-                    <div className={styles.appImg}>
-                      <img src={item.imageUrl} alt="" />
-                    </div>
-                    <div className={styles.appContent}>
-                      <h2 className={styles.head}>
-                        {item.title}
-                        <span className={styles.subtitle}>{item.subtitle}</span>
-                      </h2>
+          <div
+            className={`${styles.menu} ${showMenu && styles.active}`}
+            onClick={toggleMenu}
+          >
+            <span className={`${styles.line} ${styles.line1}`}></span>
+            <span className={`${styles.line} ${styles.line2}`}></span>
+            <span className={`${styles.line} ${styles.line3}`}></span>
+          </div>
 
-                      <button className={styles.btn}>
-                        <a href={item.link} className={styles.link}>
-                          زيارة الموقع
-                        </a>
-                        <item.icon className={styles.icon} />
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+          {visibleApps && <VisibleApp />}
+
+          <SideBar view={showMenu} setShowMenu={setShowMenu} />
         </div>
       </div>
     </header>
