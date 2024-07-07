@@ -133,7 +133,7 @@
               border-radius: 10px;
               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
               width: 166.94px;
-              z-index: 1;
+              // z-index: 1;
 
               @media (max-width: 425px) {
                 left: -80%;
@@ -194,7 +194,7 @@
         }
       }
       .left {
-        z-index: 1;
+        // z-index: 1;
         padding-bottom: 20px;
 
         ul {

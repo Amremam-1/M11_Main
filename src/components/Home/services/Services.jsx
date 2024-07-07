@@ -44,8 +44,6 @@ const Services = () => {
                     <img
                       src={"/images/highlight.png"}
                       alt=""
-                      width={30}
-                      height={30}
                       security="100vw"
                     />
                     الفيديو الاعلاني
@@ -54,8 +52,6 @@ const Services = () => {
                     <img
                       src={"/images/highlight.png"}
                       alt=""
-                      width={30}
-                      height={30}
                       security="100vw"
                     />
                     التصوير الفوتوغرافي

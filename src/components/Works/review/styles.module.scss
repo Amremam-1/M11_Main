@@ -84,6 +84,8 @@
     gap: 30px;
     // padding: 40px 25px 10px 25px;
     margin: auto;
+    z-index: -1;
+    position: relative;
     .box {
       padding: 40px;
       background: rgba(14, 14, 16, 1);
