@@ -13,6 +13,16 @@
       font-size: 48px;
       font-weight: 700;
       color: rgba(200, 200, 200, 1);
+
+      @media (max-width: 992px) {
+        font-size: 40px;
+      }
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
+      @media (max-width: 425px) {
+        font-size: 22px;
+      }
     }
   }
   .box {
@@ -49,6 +59,12 @@
         font-weight: 700;
         color: rgba(202, 202, 206, 1);
 
+        @media (max-width: 1114px) {
+          font-size: 15px;
+        }
+        @media (max-width: 984px) {
+          font-size: 12px;
+        }
         .subtitle {
           font-size: 14px;
           font-weight: 400;
@@ -63,6 +79,10 @@
         padding: 4px 3px;
         border-bottom: 1px solid rgba(47, 47, 55, 1);
         position: relative;
+
+        @media (max-width: 1114px) {
+          gap: 2px;
+        }
         &::before {
           content: "";
           position: absolute;
@@ -82,6 +102,9 @@
         span {
           font-size: 14px;
           color: rgba(242, 242, 243, 1);
+          @media (max-width: 1114px) {
+            font-size: 12px;
+          }
         }
         .icon {
           color: #fff;
