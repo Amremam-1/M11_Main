@@ -43,9 +43,6 @@ const Opinion = () => {
             <span className={styles.all_comments}>اجمالي التعليقات</span>
             <span className={styles.num}>25</span>
           </div>
-          <button className={styles.view}>
-            <Link href={""}>مشاهدة جميع الاعمال </Link>
-          </button>
         </div>
 
         <div className={styles.boxs_comments}>
@@ -54,7 +51,14 @@ const Opinion = () => {
               <div className={styles.info}>
                 {item.image && (
                   <div className={styles.image}>
-                    <img className={styles.img} src={item.image} alt="" />
+                    <img
+                      className={styles.img}
+                      src={item.image}
+                      alt=""
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                    />
                   </div>
                 )}
 
@@ -78,10 +82,6 @@ const Opinion = () => {
               <p className={styles.comment}>{item.comment}</p>
             </div>
           ))}
-        </div>
-
-        <div className={styles.m11}>
-          <img className={styles.img} src={"/images/M11-01-01.png"} />
         </div>
       </div>
     </section>

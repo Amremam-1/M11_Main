@@ -59,6 +59,29 @@ export const responsive = {
   },
 }
 
+export const responsivebox = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1236 },
+    items: 4,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1236, min: 866 },
+    items: 3,
+    slidesToSlide: 1,
+  },
+  mobile: {
+    breakpoint: { max: 865, min: 425 },
+    items: 2,
+    slidesToSlide: 1,
+  },
+  smmobile: {
+    breakpoint: { max: 425, min: 320 },
+    items: 1,
+    slidesToSlide: 1,
+  },
+}
+
 export const apps = [
   {
     title: "مجموعة ماهر بن نايف التجارية",
@@ -119,5 +142,28 @@ export const navList = [
     titleEn: "",
     link: "/contact",
     icon: IoIosContacts,
+  },
+]
+
+export const features = [
+  {
+    id: 1,
+    num: 20,
+    title: "سنوات خبرة",
+  },
+  {
+    id: 2,
+    num: 50,
+    title: "فريق العمل",
+  },
+  {
+    id: 3,
+    num: 100,
+    title: "العملاء",
+  },
+  {
+    id: 4,
+    num: 150,
+    title: "إجمالي المشاريع",
   },
 ]
