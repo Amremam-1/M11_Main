@@ -1,19 +1,9 @@
 import styles from "./styles.module.scss"
 import { LiaAngleDoubleDownSolid } from "react-icons/lia"
 import { FiArrowDownLeft } from "react-icons/fi"
-import { FaXTwitter } from "react-icons/fa6"
-import { FaFacebookF } from "react-icons/fa"
-import { IoLogoInstagram } from "react-icons/io5"
-import { FaYoutube } from "react-icons/fa"
+import { social } from "../../data"
 import { Link } from "react-router-dom"
 import { goToSection } from "../../utils"
-
-const social = [
-  { id: "1", icon: FaXTwitter, link: "" },
-  { id: "2", icon: FaFacebookF, link: "" },
-  { id: "3", icon: IoLogoInstagram, link: "" },
-  { id: "4", icon: FaYoutube, link: "" },
-]
 
 const Intro = () => {
   return (

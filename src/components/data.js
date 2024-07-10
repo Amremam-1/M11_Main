@@ -4,6 +4,10 @@ import { GrServices } from "react-icons/gr"
 import { MdWork } from "react-icons/md"
 import { IoMdInformationCircleOutline } from "react-icons/io"
 import { IoIosContacts } from "react-icons/io"
+import { FaXTwitter } from "react-icons/fa6"
+import { FaFacebookF } from "react-icons/fa"
+import { IoLogoInstagram } from "react-icons/io5"
+import { FaYoutube } from "react-icons/fa"
 
 export const contentVideo = [
   {
@@ -166,4 +170,11 @@ export const features = [
     num: 150,
     title: "إجمالي المشاريع",
   },
+]
+
+export const social = [
+  { id: "1", icon: FaXTwitter, link: "" },
+  { id: "2", icon: FaFacebookF, link: "" },
+  { id: "3", icon: IoLogoInstagram, link: "" },
+  { id: "4", icon: FaYoutube, link: "" },
 ]
