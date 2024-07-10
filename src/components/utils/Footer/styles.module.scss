@@ -148,6 +148,10 @@
             li {
               border-bottom: 1px solid rgba(47, 47, 55, 1);
               padding-bottom: 5px;
+              transition: all 0.5s;
+              &:hover {
+                transform: translateX(-15px);
+              }
               a {
                 font-weight: 400;
                 font-size: 18px;

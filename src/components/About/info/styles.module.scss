@@ -51,6 +51,12 @@
       @media (max-width: 1024px) {
         font-size: 18px;
       }
+      @media (max-width: 425px) {
+        font-size: 15px;
+      }
+      @media (max-width: 375px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -92,6 +98,9 @@
     line-height: 43.64px;
     margin-bottom: 38px;
 
+    @media (max-width: 425px) {
+      font-size: 35px;
+    }
     span {
       font-size: 24px;
       font-weight: 400;
@@ -102,10 +111,14 @@
 
   .applications {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
     row-gap: 100px;
     margin-bottom: 80px;
+
+    @media (max-width: 355px) {
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
 
     .app_content {
       background: rgba(30, 30, 31, 1);
@@ -118,6 +131,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 768px) {
+          img {
+            width: 135px;
+            height: 130px;
+          }
+        }
       }
 
       .app_bottom {

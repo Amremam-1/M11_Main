@@ -3,7 +3,11 @@
 .container {
   max-width: 1400px;
   margin: auto;
-  padding-top: 68px;
+  padding-top: 30px;
+
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
 
   .discover {
     display: flex;
@@ -231,9 +235,17 @@
     .img {
       width: 370px;
       height: 160px;
-      @media (max-width: 375px) {
-        width: 85%;
-        height: 110px;
+      @media (max-width: 898px) {
+        width: 320px;
+        height: 150px;
+      }
+      @media (max-width: 898px) {
+        width: 220px;
+        height: 90px;
+      }
+      @media (max-width: 425px) {
+        width: 180px;
+        height: 80px;
       }
     }
   }

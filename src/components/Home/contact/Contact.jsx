@@ -32,25 +32,26 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
           <div className={styles.left}>
             <form>
               <input
                 className={styles.fristName}
                 type="text"
                 placeholder="الاسم الاول"
-                id="name"
-                name="name"
+                id="firstName"
+                name="firstName"
               />
               <input
                 className={styles.lastName}
                 type="text"
                 placeholder="الاسم الاخير"
-                id="name"
-                name="name"
+                id="lastName"
+                name="lastName"
               />
               <input
-                className={styles.email}
-                type="message"
+                className={styles.message}
+                type="text"
                 placeholder="اكتب رسالتك"
                 id="message"
                 name="message"

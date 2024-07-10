@@ -17,9 +17,6 @@ const PageHead = () => {
     setIsPopupVisible(false)
   }
 
-  // const handleClick = () => {
-  //   setIsPopupVisible(!isPopupVisible)
-  // }
   return (
     <section className={styles.pageHead}>
       <div className={styles.container}>

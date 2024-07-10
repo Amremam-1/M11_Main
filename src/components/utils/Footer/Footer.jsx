@@ -5,22 +5,22 @@ import { IoLogoInstagram } from "react-icons/io5"
 import { FaYoutube } from "react-icons/fa"
 import { IoIosMailOpen } from "react-icons/io"
 import { FiPhone } from "react-icons/fi"
-import { Link } from "react-router-dom"
+
 
 const services = [
   {
     title: "الرئيسية",
     links: [
       {
-        href: "http://www.mahercp.net/job_request.html#",
+        href: "/about",
         display: "من نحن",
       },
       {
-        href: "http://www.mahercp.net/job_request.html#",
+        href: "/works",
         display: "اعمالنا",
       },
       {
-        href: "http://www.mahercp.net/job_request.html#",
+        href: "/services",
         display: "خدمتنا",
       },
     ],
@@ -91,7 +91,7 @@ const Footer = () => {
                 sizes="100vw"
                 loading="lazy"
               />
-              <Link href={""}>{item.display}</Link>
+              <a to={item.href}>{item.display}</a>
             </li>
           ))}
         </ul>
@@ -140,7 +140,7 @@ const Footer = () => {
                   <ul className={styles.nav}>
                     {item.links.map((link, index) => (
                       <li key={index}>
-                        <Link href={link.href}>{link.display}</Link>
+                        <a href={link.href}>{link.display}</a>
                       </li>
                     ))}
                   </ul>
@@ -192,9 +192,9 @@ const Footer = () => {
         <div className={styles.wrapper}>
           <div className={styles.links}>
             <ul>
-              <Link href="">سياسة الخصوصية</Link>
+              <a href="">سياسة الخصوصية</a>
               <span></span>
-              <Link href="">الشروط والأحكام</Link>
+              <a href="">الشروط والأحكام</a>
             </ul>
           </div>
 
@@ -202,9 +202,9 @@ const Footer = () => {
             <ul>
               {social.map((item) => (
                 <li key={item.id}>
-                  <Link href={""}>
+                  <a href={""}>
                     <item.icon className={styles.icon} />
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

@@ -16,6 +16,10 @@
       width: 220px;
       height: 90px;
     }
+    @media (max-width: 425px) {
+      width: 180px;
+      height: 80px;
+    }
   }
 }
 
@@ -46,7 +50,7 @@
       padding: 80px;
     }
     @media (max-width: 598px) {
-      padding: 60px;
+      padding: 40px;
     }
     h3 {
       font-size: 25px;
@@ -88,6 +92,7 @@
       }
       .email {
         // border: 1px solid red;
+        color: #fff;
         width: 60%;
         border: none;
         border-bottom: 1px solid rgba(253, 227, 167, 1);
