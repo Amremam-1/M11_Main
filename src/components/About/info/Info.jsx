@@ -5,12 +5,15 @@ import { GoArrowUpLeft } from "react-icons/go"
 const applications = [
   {
     imgUrl: "/images/D2020App.png",
+    link: "https://d2020web.vercel.app/",
   },
   {
     imgUrl: "/images/halfApp2.png",
+    link: "https://noo9.net/",
   },
   {
     imgUrl: "/images/mbnApp.png",
+    link: "https://mahercp2-main.vercel.app/en",
   },
 ]
 
@@ -48,7 +51,7 @@ const Info = () => {
               </div>
 
               <div className={styles.app_bottom}>
-                <Link to={""} className={styles.link}>
+                <Link to={item.link} className={styles.link}>
                   <h3 className={styles.info}>زيارة الموقع</h3>
                   <GoArrowUpLeft className={styles.icon} />
                 </Link>
