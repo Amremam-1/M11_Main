@@ -3,7 +3,7 @@ import styles from "./styles.module.scss"
 
 const News = () => {
   return (
-    <section className="container">
+    <section>
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <h3>النشرة الإخبارية</h3>
